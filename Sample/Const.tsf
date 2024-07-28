@@ -1,0 +1,26 @@
+//////////////////////////////////////////////////////////////////////
+//																	//
+//		Const.tsf	Sample Script for ComScrp Library				//
+//		Constant Keyword Sample										//
+//																	//
+//				Copyright Takahiro Ito, 2003/02/26 - 2003/02/26		//
+//////////////////////////////////////////////////////////////////////
+
+/*
+	このスクリプトは、実験用のスクリプトです。
+	定数キーワード(組み込み定数)の実験をします。
+*/
+
+int x;
+
+	x = CONST_TEST_0;
+	mes x;
+
+	x = CONST_TEST_1;
+	mes x;
+
+	x = CONST_TEST_2;
+	mes x;
+
+	x = CONST_TEST_3;
+	mes x;

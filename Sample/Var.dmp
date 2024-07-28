@@ -1,0 +1,10 @@
+0000 : goto main
+
+#Label0:
+0008 : let a 8
+0014 : let id_00 2
+0020 : mul id_00 a
+002c : add id_00 3
+0038 : let b, id_00
+0044 : let c 6
+0050 : end

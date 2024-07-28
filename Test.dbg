@@ -1,0 +1,3 @@
+This file is the sample text for semicoron - separated script format , readline ( )
+Comment start with ' / ' - and - ' * ' such as Then , this part is * not * comment part , and compiled by CCompiler class object .
+Also , we can begin comment with therefore , this is a script part .

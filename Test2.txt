@@ -1,0 +1,13 @@
+This file is the sample text
+for cr-separated script format,
+readline();
+Comment , as same to semicoron-separeted script,
+start with '/'-and-'*'	such as /*
+so, this part is comment block,
+and end with '*'-and-'/' such as */
+Then, this part is *not* comment part, and compiled
+by CCompiler class object.;Also, we can begin comment with // for one line comment
+therefore, this is a script part.
+But, when we use cr-separeted script format,
+we can use also one-line-comment with semicoron such as ;this is a comment!
+and, next line is not comment.

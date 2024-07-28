@@ -1,0 +1,69 @@
+0000 : goto main
+
+#Label0:
+0008 : Damage Enemy 50
+0014 : stop
+
+#Label2:
+0018 : SelectCard Player 68 1
+0028 : let x Selected
+0034 : let j SelectedFrom
+0040 : let id_00 j
+004c : IsEqu id_00 4
+0058 : if, id_00 /* ( 00000078 ) */ 
+0064 : let y Player
+0070 : else /* ( 00000084 ) */ 
+0078 : let y Enemy
+0084 : GetCardInfo x j
+0090 : let j CardOffense
+009c : let iv0001 j
+00a8 : mul iv0001 30
+00b4 : div iv0001 100
+00c0 : let id_00 j
+00cc : add id_00 iv0001
+00d8 : let j, id_00
+00e4 : AP y x j
+00f4 : stop
+
+#Label3:
+00f8 : SelectCard Player 68 1
+0108 : let x Selected
+0114 : let j SelectedFrom
+0120 : let id_00 j
+012c : IsEqu id_00 4
+0138 : if, id_00 /* ( 00000158 ) */ 
+0144 : let y Player
+0150 : else /* ( 00000164 ) */ 
+0158 : let y Enemy
+0164 : GetCardInfo x j
+0170 : let j CardDefense
+017c : let iv0001 j
+0188 : mul iv0001 30
+0194 : div iv0001 100
+01a0 : let id_00 j
+01ac : sub id_00 iv0001
+01b8 : let j, id_00
+01c4 : DP y x j
+01d4 : stop
+
+#Label4:
+01d8 : SelectCard Player 68 1
+01e8 : let x Selected
+01f4 : let j SelectedFrom
+0200 : let id_00 j
+020c : IsEqu id_00 4
+0218 : if, id_00 /* ( 00000238 ) */ 
+0224 : let y Player
+0230 : else /* ( 00000244 ) */ 
+0238 : let y Enemy
+0244 : GetCardInfo x j
+0250 : let j CardDefense
+025c : let iv0001 j
+0268 : mul iv0001 30
+0274 : div iv0001 100
+0280 : let id_00 j
+028c : sub id_00 iv0001
+0298 : let j, id_00
+02a4 : DP y x j
+02b4 : stop
+02b8 : end

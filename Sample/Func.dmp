@@ -1,0 +1,51 @@
+0000 : goto main
+
+_func Func0
+0008 : push BP
+0010 : let BP SP
+001c : sub SP 3
+0028 : let [BP-1] 1
+0034 : let [BP-2] 2
+0040 : let id_00 [BP-1]
+004c : add id_00 [BP-2]
+0058 : let [BP-3], id_00
+0064 : result [BP-3] /* ( 00000070 ) */ 
+_endfunc Func0
+0070 : let SP BP
+007c : pop BP
+0084 : return
+
+_func Func1
+0088 : push BP
+0090 : let BP SP
+009c : sub SP 1
+00a8 : let id_00 [BP+1]
+00b4 : mul id_00 [BP+2]
+00c0 : let [BP-1], id_00
+00cc : result [BP-1] /* ( 000000d8 ) */ 
+_endfunc Func1
+00d8 : let SP BP
+00e4 : pop BP
+00ec : return
+
+#Label0:
+00f0 : call FuncSample2 5 8
+0100 : let x RetValue
+010c : mes, 5 * 8 = , x
+0118 : call FuncSample3 32 4
+0128 : let x RetValue
+0134 : mes, 32 / 4 = , x
+0140 : end
+
+_func Func2
+0144 : push BP
+014c : let BP SP
+0158 : sub SP 0
+0164 : let id_00 [BP+1]
+0170 : div id_00 [BP+2]
+017c : result, id_00 /* ( 00000188 ) */ 
+_endfunc Func2
+0188 : let SP BP
+0194 : pop BP
+019c : return
+01a0 : end

@@ -1,0 +1,12 @@
+0000 : goto main
+
+#Label0:
+0008 : let x 0
+0014 : mes x
+001c : let x 1
+0028 : mes x
+0030 : let x 2
+003c : mes x
+0044 : let x 0
+0050 : mes x
+0058 : end

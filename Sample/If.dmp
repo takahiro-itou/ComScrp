@@ -1,0 +1,46 @@
+0000 : goto main
+
+#Label0:
+0008 : let a 0
+0014 : let id_00 a
+0020 : IsEqu id_00 0
+002c : if, id_00 /* ( 00000044 ) */ 
+0038 : let b 1
+0044 : let a 1
+0050 : let id_00 a
+005c : IsEqu id_00 0
+0068 : if, id_00 /* ( 00000080 ) */ 
+0074 : let b 2
+0080 : mes b
+0088 : let a 1
+0094 : let id_00 a
+00a0 : IsEqu id_00 0
+00ac : if, id_00 /* ( 000000cc ) */ 
+00b8 : let b 3
+00c4 : else /* ( 000000d8 ) */ 
+00cc : let b 4
+00d8 : mes b
+00e0 : let a 6
+00ec : let id_00 a
+00f8 : IsESm id_00 2
+0104 : if, id_00 /* ( 00000124 ) */ 
+0110 : let b 10
+011c : else /* ( 000001d8 ) */ 
+0124 : let id_00 a
+0130 : IsESm id_00 4
+013c : if, id_00 /* ( 0000015c ) */ 
+0148 : let b 20
+0154 : else /* ( 000001d8 ) */ 
+015c : let id_00 a
+0168 : IsESm id_00 6
+0174 : if, id_00 /* ( 00000194 ) */ 
+0180 : let b 30
+018c : else /* ( 000001d8 ) */ 
+0194 : let id_00 a
+01a0 : IsESm id_00 8
+01ac : if, id_00 /* ( 000001cc ) */ 
+01b8 : let b 40
+01c4 : else /* ( 000001d8 ) */ 
+01cc : let b 50
+01d8 : mes b
+01e0 : end

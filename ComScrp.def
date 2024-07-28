@@ -1,0 +1,14 @@
+LIBRARY   ComScrp
+DESCRIPTION "Implements a Common Script."
+EXPORTS
+	InitDLL				@1
+	MakeCommandTable	@2
+	CompileTextScript	@3
+	WriteBinaryScript	@4
+	WriteBinaryMap		@5
+	ReadBinaryScript	@6
+	ExecuteScript		@7
+	GetLocalVariable	@8
+	SetLocalVariable	@9
+	GetSystemVariable	@19
+	SetSystemVariable	@11

@@ -1,0 +1,54 @@
+0000 : goto main
+
+#Label0:
+0008 : goto label3
+
+#Label2:
+0010 : mes, 通常は、このようなスクリプトを書いてはいけません。
+0018 : goto label5
+
+#Label4:
+0020 : mes, テストのため、実行順序をでたらめに変えています。
+0028 : goto label4
+
+#Label1:
+0030 : mes, これは、goto命令のテストです。
+0038 : goto label2
+
+#Label5:
+0040 : mes, このようなスクリプトは非常に読みにくくなります
+0048 : goto label1
+
+#Label3:
+0050 : mes, では、次に、gosub/returnの説明です。
+0058 : goto label7
+
+#Label7:
+0060 : mes, Here is Subroutine.
+0068 : return
+
+#Label6:
+006c : gosub label6
+0074 : gosub label6
+007c : gosub label6
+0084 : goto label11
+
+#Label9:
+008c : let id_00 a
+0098 : IsEqu id_00 5
+00a4 : if, id_00 /* ( 000000c0 ) */ 
+00b0 : mes, aの値が5です。
+00b8 : else /* ( 000000c8 ) */ 
+00c0 : mes, aの値は5ではありません。
+00c8 : return
+
+#Label8:
+00cc : let a 1
+00d8 : gosub label8
+00e0 : let a 3
+00ec : gosub label8
+00f4 : let a 5
+0100 : gosub label8
+0108 : let a 10
+0114 : gosub label8
+011c : end
